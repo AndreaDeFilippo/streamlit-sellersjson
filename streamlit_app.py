@@ -20,4 +20,4 @@ url = "https://us-central1-viralize-gateway.cloudfunctions.net/mergeSellers?prov
 df_json = pd.read_json(url, lines=True)
 df_sellers = df_sellers.append(df_json, ignore_index = True, sort=False)
 
-df_sellers
+st.dataframe(df_sellers)
