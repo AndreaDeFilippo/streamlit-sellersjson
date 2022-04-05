@@ -15,7 +15,7 @@ st.title('SellersJson to CSV Tool')
 
 title = st.text_input('Company Domain', 'showheroes.com')
 
-
+df_sellers = pd.DataFrame()
 url = "https://us-central1-viralize-gateway.cloudfunctions.net/mergeSellers?providers=" + title
 df_json = pd.read_json(url, lines=True)
 df_sellers = df_sellers.append(df_json, ignore_index = True, sort=False)
