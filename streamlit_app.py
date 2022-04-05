@@ -21,3 +21,6 @@ image = Image.open(BytesIO(response.content))
 st.image(image)
 
 st.title('SellersJson to CSV')
+
+
+title = st.text_input('Company Domain', 'showheroes.com')
