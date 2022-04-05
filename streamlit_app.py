@@ -15,8 +15,7 @@ st.title('SellersJson to CSV Tool')
 
 
 st.subheader('Insert Company URL')
-st.warning("Don't put http:// and/or www in the field.")
-title = st.text_input('Domain', 'showheroes.com')
+title = st.text_input('Enter the URL in the form domain.com. \n Do not enter https and/or www in the field', 'showheroes.com')
 
 url = "https://us-central1-viralize-gateway.cloudfunctions.net/mergeSellers?providers=" + title
 df = pd.read_json(url, lines=True)
