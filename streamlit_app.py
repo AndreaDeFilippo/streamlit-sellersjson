@@ -14,3 +14,10 @@ In the meantime, below is an example of what you can do with just a few lines of
 """
 
 
+# Header
+
+response = requests.get('https://raw.githubusercontent.com/AndreaDeFilippo/icons/main/company/Logo-header_2.png')
+image = Image.open(BytesIO(response.content))
+st.image(image)
+
+st.title('SellersJson to Excel')
