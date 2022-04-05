@@ -20,4 +20,4 @@ response = requests.get('https://raw.githubusercontent.com/AndreaDeFilippo/icons
 image = Image.open(BytesIO(response.content))
 st.image(image)
 
-st.title('SellersJson to Excel')
+st.title('SellersJson to CSV')
