@@ -1,16 +1,14 @@
 import requests
 import pandas as pd
 import streamlit as st
+from PIL import Image
+from io import BytesIO
 
 """
-# Welcome to Streamlit!
+# Welcome to SellersJson to CSV tool!
 
-Edit `/streamlit_app.py` to customize this app to your heart's desire :heart:
+If you have any questions send an e-mail to [me](andrea.defilippo@showheroes-group.com).
 
-If you have any questions, checkout our [documentation](https://docs.streamlit.io) and [community
-forums](https://discuss.streamlit.io).
-
-In the meantime, below is an example of what you can do with just a few lines of code:
 """
 
 
